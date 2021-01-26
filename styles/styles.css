@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color: #191c03; 
+}
+
+nav, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none; 
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    background-color: #fff;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul:last-child{
+    margin-right: 30px;
+}
+
+header img{
+    width: 200px;
+
+}
+
+header nav{
+    display: flex;
+}
+
+header li a{
+    color: var(--primary-color);
+}
+
+header li{
+    margin: 0 15px;
+    font-weight: bolder;
+}
+
+header li:first-child{
+    margin-left: 0;
+}
+
+header li:last-child{
+    margin-right: 0;
+}
+
+header li:hover{
+    text-decoration: underline;
+}
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        margin-bottom: 15px;
+    
+    }
+}
+
+.hero{ 
+    background-image: url(../assets/img/hero.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.hero h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn{
+    background-color: #fff;
+    border-radius: 4px;
+    color: var(--primary-color);
+    padding: 20px 50px;
+}
+
+@media (max-width:700px){
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero h3{
+        font-size: 1.5rem;
+    }
+}
+.pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.pictures h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.pictures p{
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.pictures hr{
+    width: 170px;
+    height: 1px;
+    background-color: var(--primary-color);
+    margin-bottom: 70px;
+    border: none;
+    border-radius: 50px;
+}
+
+#slider{
+    width: 900px;
+    position: relative;
+
+}
+
+#slider img{
+    /*opacity: 0;
+    transition: 800ms;
+    */
+    width: 1000px;
+    height: 500px;
+    margin-bottom: 10px;
+    position: absolute;
+    
+}
